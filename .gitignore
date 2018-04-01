@@ -1,0 +1,5 @@
+client_secret.json
+gsuiteauth/client_secret.json
+*/client_secret.json
+*/__pycache__/
+__pycache__/

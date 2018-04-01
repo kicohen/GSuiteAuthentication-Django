@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<br>
+
+<div class="container">
+	<div class="row">
+		<table class="table">
+			<thead>
+				<td>Title</td>
+				<td>Created Date</td>
+				<td>Last Modifying User</td>
+			</thead>
+
+		{% for item in files %}
+
+			<tr>
+				<td>{{ item.title }}</td>
+				<td>{{ item.createdDate }} </td>
+				<td>{{ item.lastModifyingUser.displayName }}</td>
+			</tr>
+
+		{% endfor %}
+
+		</table>
+	</div>
+</div>
+
+<br>
+
+</body>
+</html>
